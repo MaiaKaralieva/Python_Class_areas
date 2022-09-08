@@ -1,0 +1,17 @@
+#class TriangleAngle asking for inputs
+class TriangleArea:
+  def __init__(self,base,high,units):
+    self.base = base
+    self.high = high
+    self.units = units
+
+  def AreaTriangle(self):
+    print("The triangle area is: ", round((self.base * self.high)/2,2), self.units, ".")
+
+base = float(input("Write triangle-base value "))
+high = float (input("Write triangle-high value "))
+units = str(input("Write triangle-value units "))
+
+at1 = TriangleArea(base,high,units)
+
+at1.AreaTriangle()
