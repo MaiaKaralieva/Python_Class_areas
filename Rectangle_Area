@@ -1,0 +1,17 @@
+#class Rectangle area
+class RectangleArea:
+  def __init__(self,base,high,units):
+    self.base = base
+    self.high = high
+    self.units = units
+
+  def AreaRectangle(self):
+    print("The triangle area is: ", round((self.base * self.high),2), self.units, ".")
+
+base = float(input("Write rectangle-base value "))
+high = float (input("Write rectangle-high value "))
+units = str(input("Write rectangle-value units "))
+
+at1 = RectangleArea(base,high,units)
+
+at1.AreaRectangle()
